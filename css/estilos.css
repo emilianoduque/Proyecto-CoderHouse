@@ -152,6 +152,7 @@ footer img {
   transition: 1s ease;
   overflow: hidden;
   border-radius: 15px;
+  background-color: white;
 }
 
 .card-productos h3 {
@@ -209,6 +210,18 @@ aside.aside-productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.section-productos {
+  background-color: #e5e5f7;
+  background: repeating-linear-gradient(
+    45deg,
+    #bf6008,
+    #bf6008 5px,
+    #e5e5f7 5px,
+    #e5e5f7 25px
+  );
+  border-radius: 15px;
 }
 /* GRID PRODUCTOS */
 
@@ -306,6 +319,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  background-color: white;
 }
 
 .card-oferta h3 {
@@ -328,6 +342,15 @@ aside.categorias-ofertas {
 
 .titulo {
   text-align: center;
+}
+
+.card-body {
+  height: 100%;
+  width: 300px;
+}
+
+.fondo {
+  background-color: #985d29;
 }
 /* OFERTAS */
 
@@ -440,7 +463,6 @@ aside.aside-productos h3 {
   .main-grid {
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 667px) {
