@@ -456,6 +456,7 @@ aside.aside-productos h3 {
   }
 
   .slide {
+    max-width: none;
     grid-row: 1/2;
     grid-column: 1/-1;
   }
