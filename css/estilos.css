@@ -24,9 +24,32 @@ main {
   padding: 4rem 1rem;
 }
 
+.title-aside {
+  font-size: 1.4rem;
+}
+
 .title-aside-productos {
   display: flex;
   align-items: center;
+}
+
+.p-aside-productos {
+  font-size: 1rem;
+}
+
+.marcas {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.p-aside-productos-marcas {
+  font-size: 1rem;
+  color: rgb(84, 84, 84);
+}
+
+.p-aside-productos-marcas:hover,
+.title-aside-productos:hover {
+  color: #985d29;
 }
 
 .main-grid {
@@ -203,6 +226,7 @@ footer img {
 
 aside.aside-productos {
   grid-column: 1/2;
+  padding-left: 1.4rem;
 }
 
 .section-productos {
@@ -210,18 +234,6 @@ aside.aside-productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.section-productos {
-  background-color: #e5e5f7;
-  background: repeating-linear-gradient(
-    45deg,
-    #bf6008,
-    #bf6008 5px,
-    #e5e5f7 5px,
-    #e5e5f7 25px
-  );
-  border-radius: 15px;
 }
 /* GRID PRODUCTOS */
 
@@ -352,6 +364,15 @@ aside.categorias-ofertas {
 .fondo {
   background-color: #985d29;
 }
+
+.btn {
+  background-color: #985d29;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
 /* OFERTAS */
 
 /* ENVIOS */
@@ -362,6 +383,23 @@ aside.categorias-ofertas {
   grid-template-rows: auto;
   margin: 2rem 0;
 }
+
+
+/* CATEGORIAS ENVIOS */
+.p-categorias-envios {
+  font-size: 1.2rem;
+  color: rgb(92, 92, 92);
+}
+
+.title-categorias-envios {
+  font-size: 1.4rem;
+}
+
+aside.categorias-envios {
+  margin-left: 3rem;
+  padding-right: 1rem;
+}
+
 
 /* ENVIOS TABLA */
 table,
