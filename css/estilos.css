@@ -157,7 +157,7 @@ footer p {
 }
 
 footer img {
-  max-width: 50px;
+  max-width: 60px;
 }
 /* FOOTER */
 
@@ -297,6 +297,7 @@ textarea {
 input,
 textarea {
   background-color: #d5d3ce;
+  padding: 10px;
 }
 
 .formulario-contacto button {
@@ -367,10 +368,12 @@ aside.categorias-ofertas {
 
 .btn {
   background-color: #985d29;
+  border: none;
 }
 .btn:hover {
   background-color: white;
-  color: black;
+  color: #985d29;
+  border: 1px solid #985d29;
 }
 
 /* OFERTAS */
