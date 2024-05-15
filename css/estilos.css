@@ -213,7 +213,6 @@ footer img {
 .card-productos h3 {
   padding-top: 7px;
 }
-
 /* Card-Productos */
 
 /* GRID PRODUCTOS */
@@ -245,6 +244,8 @@ form {
   box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.75);
   border-radius: 2rem;
   margin-top: 2rem;
+  background-color: white;
+  overflow: hidden;
 }
 
 .formulario-contacto {
@@ -310,6 +311,35 @@ textarea {
 .formulario-contacto button:hover {
   transform: scale(1.1);
 }
+
+.background-page {
+  position: relative;
+}
+
+.background-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../multimedia/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.formulario-contacto {
+  position: relative;
+  z-index: 2;
+  padding: 5rem;
+}
+
+form img {
+  margin-top: 10rem;
+}
+
 /* FORM */
 
 /* OFERTAS */
@@ -387,7 +417,6 @@ aside.categorias-ofertas {
   margin: 2rem 0;
 }
 
-
 /* CATEGORIAS ENVIOS */
 .p-categorias-envios {
   font-size: 1.2rem;
@@ -402,7 +431,6 @@ aside.categorias-envios {
   margin-left: 3rem;
   padding-right: 1rem;
 }
-
 
 /* ENVIOS TABLA */
 table,
@@ -524,6 +552,10 @@ aside.aside-productos h3 {
 
   .container-fluid button {
     margin: 0;
+  }
+
+  .formulario-contacto {
+    padding: 0;
   }
 
   /* Nav */
