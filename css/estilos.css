@@ -432,6 +432,24 @@ aside.categorias-envios {
   padding-right: 1rem;
 }
 
+aside.categorias-envios a{ 
+  text-decoration: none;
+  color: black;
+}
+
+aside.categorias-envios p {
+  color: black;
+}
+
+aside#aside-envios-der {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.title-categorias-envios {
+  margin-top: 3rem;
+}
+
 /* ENVIOS TABLA */
 table,
 td,
