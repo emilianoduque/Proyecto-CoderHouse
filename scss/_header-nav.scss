@@ -1,0 +1,62 @@
+/* Nav */
+header {
+  margin-top: -0.5rem;
+  .navbar {
+    .container-fluid {
+      background-color: $color-claro;
+      box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+      @include small-tablet {
+        justify-content: center !important;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      img {
+        transition: 1s ease;
+        max-width: 70px;
+        border-radius: 15px;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      ul {
+        @include small-tablet {
+          align-items: center;
+        }
+        li {
+          margin: 20px;
+          transition: 0.9s ease;
+          border-radius: 15px;
+          &:hover {
+            background-color: #985d29;
+            box-shadow:3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+          }
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile-config {
+  font-size: 1.5rem;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+  @include tablet {
+    justify-content: center;
+  }
+}  /* no usado con nesting por un problema en funcionamiento del boton */
+
+/* Nav */

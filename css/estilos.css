@@ -1,37 +1,12 @@
-/*VARIABLES*/
-/*VARIABLES*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-main {
-  padding: 4rem 1rem;
-}
-
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  align-items: center;
-}
-@media screen and (max-width: 995px) {
-  .main-grid {
-    justify-content: center;
-  }
-}
-
+/*VARIABLES*/
+/*VARIABLES*/
 /* Nav */
-.profile-config {
-  font-size: 1.5rem;
-  align-items: center;
-}
-.profile-config a {
-  text-decoration: none;
-  color: black;
-}
-
 header {
   margin-top: -0.5rem;
 }
@@ -69,6 +44,15 @@ header .navbar .container-fluid ul li:hover {
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
 }
 header .navbar .container-fluid ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-config {
+  font-size: 1.5rem;
+  align-items: center;
+}
+.profile-config a {
   text-decoration: none;
   color: black;
 }
@@ -119,40 +103,51 @@ header .navbar .container-fluid ul li a {
 }
 
 /* INICIO */
-/* FOOTER */
-footer {
+/* CATEGORIAS CARD PRINCIPAL */
+.categorias-principales {
+  margin-top: 5rem;
   display: flex;
-  justify-content: space-between;
-  background-color: #653518;
-  align-items: center;
-  height: 70px;
-  padding: 0 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-column: 1/-1;
+  background: linear-gradient(to bottom, #985d29 50%, rgba(0, 0, 0, 0) 50%);
 }
-@media screen and (max-width: 401px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding-top: 2rem;
-  }
+.categorias-principales .cat-card {
+  margin: 1rem;
+  transition: 1s ease;
+  text-align: center;
 }
-footer img {
-  max-width: 60px;
+.categorias-principales .cat-card:hover {
+  transform: translateY(-18px);
 }
-footer p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-}
-footer a {
-  color: black;
-}
-footer a i {
-  font-size: 2rem;
-  color: black;
+.categorias-principales .cat-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.35);
 }
 
-/* FOOTER */
+#ver-catalogo {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+#ver-catalogo #ver-catalogo-button {
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  grid-column: 1/-1;
+  text-align: center;
+  width: 100px;
+  padding: 0.3rem;
+  transition: 1s ease;
+}
+#ver-catalogo #ver-catalogo-button:hover {
+  transform: scale(1.1);
+}
+
+/* CATEGORIAS CARD PRINCIPAL */
 /* PRODUCTOS */
 .main-grid-productos {
   display: grid;
@@ -226,7 +221,7 @@ footer a i {
 }
 .main-grid-productos .section-productos .card-productos img {
   max-width: 200px;
-  transition: 3s ease;
+  transition: 2s ease;
 }
 .main-grid-productos .section-productos .card-productos img:hover {
   transform: rotate(30deg);
@@ -252,103 +247,14 @@ footer a i {
   transform: scale(1.1);
 }
 
+aside.aside-productos {
+  font-size: 1rem;
+}
+aside.aside-productos h3 {
+  font-size: 1.2rem;
+}
+
 /*PRODUCTOS */
-/* FORM */
-.background-page {
-  position: relative;
-}
-.background-page .formulario-contacto {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  padding: 5rem;
-}
-@media screen and (max-width: 667px) {
-  .background-page .formulario-contacto {
-    padding: 0;
-  }
-}
-.background-page .formulario-contacto form {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.75);
-  border-radius: 2rem;
-  margin-top: 2rem;
-  background-color: white;
-  overflow: hidden;
-}
-.background-page .formulario-contacto form img {
-  float: left;
-  margin-top: 10rem;
-}
-@media screen and (max-width: 667px) {
-  .background-page .formulario-contacto form img {
-    display: none;
-  }
-}
-.background-page .formulario-contacto form fieldset {
-  padding: 2rem;
-  border: none;
-}
-.background-page .formulario-contacto form fieldset label,
-.background-page .formulario-contacto form fieldset input,
-.background-page .formulario-contacto form fieldset button,
-.background-page .formulario-contacto form fieldset textarea {
-  display: block;
-  margin-left: 1rem;
-  width: 88%;
-  border-radius: 0.5rem;
-  border: none;
-}
-.background-page .formulario-contacto form fieldset input,
-.background-page .formulario-contacto form fieldset textarea {
-  background-color: #d5d3ce;
-  padding: 10px;
-}
-.background-page .formulario-contacto form fieldset textarea {
-  transition: 1s ease;
-}
-.background-page .formulario-contacto form fieldset textarea:hover {
-  transform: scale(1.1);
-}
-.background-page .formulario-contacto form fieldset button {
-  margin-top: 0.7rem;
-  height: 2rem;
-  background-color: #d29040;
-  transition: 1s ease;
-}
-.background-page .formulario-contacto form fieldset button:hover {
-  transform: scale(1.1);
-}
-.background-page .formulario-contacto form fieldset input {
-  height: 2rem;
-  margin-top: 0.3rem;
-  transition: 1s ease;
-}
-.background-page .formulario-contacto form fieldset input:hover {
-  transform: scale(1.1);
-}
-.background-page .formulario-contacto form fieldset label {
-  margin-top: 0.5rem;
-}
-
-.background-page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../multimedia/background-image.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-/* FORM */
 /* OFERTAS */
 .card-oferta {
   box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.75);
@@ -486,57 +392,150 @@ aside.categorias-ofertas {
 }
 
 /* ENVIOS */
-/* CATEGORIAS CARD PRINCIPAL */
-.categorias-principales {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  grid-column: 1/-1;
-  background: linear-gradient(to bottom, #985d29 50%, rgba(0, 0, 0, 0) 50%);
+/* FORM */
+.background-page {
+  position: relative;
 }
-.categorias-principales .cat-card {
-  margin: 1rem;
-  transition: 1s ease;
-  text-align: center;
-}
-.categorias-principales .cat-card:hover {
-  transform: translateY(-18px);
-}
-.categorias-principales .cat-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50px;
-  box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.35);
-}
-
-#ver-catalogo {
-  grid-column: 1/-1;
+.background-page .formulario-contacto {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 5rem;
 }
-#ver-catalogo #ver-catalogo-button {
-  border-radius: 15px;
-  background-color: black;
-  color: white;
-  grid-column: 1/-1;
-  text-align: center;
-  width: 100px;
-  padding: 0.3rem;
+@media screen and (max-width: 667px) {
+  .background-page .formulario-contacto {
+    padding: 0;
+  }
+}
+.background-page .formulario-contacto form {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  background-color: white;
+  overflow: hidden;
+}
+.background-page .formulario-contacto form img {
+  float: left;
+  margin-top: 10rem;
+}
+@media screen and (max-width: 667px) {
+  .background-page .formulario-contacto form img {
+    display: none;
+  }
+}
+.background-page .formulario-contacto form fieldset {
+  padding: 2rem;
+  border: none;
+}
+.background-page .formulario-contacto form fieldset label,
+.background-page .formulario-contacto form fieldset input,
+.background-page .formulario-contacto form fieldset button,
+.background-page .formulario-contacto form fieldset textarea {
+  display: block;
+  margin-left: 1rem;
+  width: 88%;
+  border-radius: 0.5rem;
+  border: none;
+}
+.background-page .formulario-contacto form fieldset input,
+.background-page .formulario-contacto form fieldset textarea {
+  background-color: #d5d3ce;
+  padding: 10px;
+}
+.background-page .formulario-contacto form fieldset textarea {
   transition: 1s ease;
 }
-#ver-catalogo #ver-catalogo-button:hover {
+.background-page .formulario-contacto form fieldset textarea:hover {
   transform: scale(1.1);
 }
-
-/* CATEGORIAS CARD PRINCIPAL */
-aside.aside-productos {
-  font-size: 1rem;
+.background-page .formulario-contacto form fieldset button {
+  margin-top: 0.7rem;
+  height: 2rem;
+  background-color: #d29040;
+  transition: 1s ease;
+}
+.background-page .formulario-contacto form fieldset button:hover {
+  transform: scale(1.1);
+}
+.background-page .formulario-contacto form fieldset input {
+  height: 2rem;
+  margin-top: 0.3rem;
+  transition: 1s ease;
+}
+.background-page .formulario-contacto form fieldset input:hover {
+  transform: scale(1.1);
+}
+.background-page .formulario-contacto form fieldset label {
+  margin-top: 0.5rem;
 }
 
-aside.aside-productos h3 {
-  font-size: 1.2rem;
+.background-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../multimedia/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* FORM */
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #653518;
+  align-items: center;
+  height: 70px;
+  padding: 0 2rem;
+}
+@media screen and (max-width: 401px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 2rem;
+  }
+}
+footer img {
+  max-width: 60px;
+}
+footer p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+footer a {
+  color: black;
+}
+footer a i {
+  font-size: 2rem;
+  color: black;
+}
+
+/* FOOTER */
+main {
+  padding: 4rem 1rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+}
+@media screen and (max-width: 995px) {
+  .main-grid {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

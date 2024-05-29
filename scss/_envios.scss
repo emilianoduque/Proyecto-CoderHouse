@@ -1,0 +1,64 @@
+/* ENVIOS */
+.grid-envios {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+    margin: 2rem 0;
+    @include medium-desktop {
+      display: flex;
+      flex-direction: column;
+    }
+    aside.categorias-envios {
+      margin-left: 3rem;
+      padding-right: 1rem;
+      .title-categorias-envios {
+        font-size: 1.4rem;
+        margin-top: 3rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .p-categorias-envios {
+        font-size: 1.2rem;
+        color: rgb(92, 92, 92);
+        color: black;
+      }
+    }
+    #article-opciones-envio {
+      background-color: $color-claro;
+      border-radius: 15px;
+      @include phone {
+        overflow: hidden;
+      }
+      table,
+      td,
+      th {
+        text-align: center;
+        @include phone {
+          border: 1px solid black;
+          text-align: center;
+        }
+      }
+      td,
+      th {
+        padding: 2rem;
+        @include phone {
+          padding: 0rem;
+        }
+      }
+      td {
+        i {
+          font-size: 2rem;
+        }
+      }
+      h1 {
+        text-align: center;
+      }
+    }
+    aside#aside-envios-der {
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+  }
+  /* ENVIOS */

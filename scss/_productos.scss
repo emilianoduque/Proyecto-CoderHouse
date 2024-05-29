@@ -1,0 +1,109 @@
+/* PRODUCTOS */
+.main-grid-productos {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: auto;
+    gap: 50px;
+    @include phone {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    aside.aside-productos {
+      grid-column: 1/2;
+      padding-left: 1.4rem;
+      @include small-phone {
+        padding: 0;
+      }
+      .title-aside {
+        font-size: 1.4rem;
+      }
+      .title-aside-productos {
+        display: flex;
+        align-items: center;
+        &:hover {
+          color: $color-medio-claro;
+        }
+      }
+      .p-aside-productos {
+        font-size: 1rem;
+      }
+      .p-aside-productos-marcas {
+        font-size: 1rem;
+        color: rgb(84, 84, 84);
+        &:hover {
+          color: $color-medio-claro;
+        }
+      }
+      .marcas {
+        border-top: 1px solid black;
+        padding-top: 10px;
+      }
+    }
+    .section-productos {
+      grid-column: 2/-1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: linear-gradient(
+        to top,
+        $color-medio,
+        $color-medio-claro,
+        $color-claro
+      );
+      border-radius: 3rem;
+      box-shadow: -6px 7px 5px -3px rgba(0, 0, 0, 0.53);
+      .card-productos {
+        box-shadow: 7px 10px 19px -12px rgba(0, 0, 0, 0.75);
+        max-width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        margin: 15px;
+        transition: 1s ease;
+        overflow: hidden;
+        border-radius: 15px;
+        background-color: white;
+        img {
+          max-width: 200px;
+          transition: 2s ease;
+          &:hover {
+            transform: rotate(30deg);
+          }
+        }
+        h3 {
+          padding-top: 7px;
+          border-top: 1px solid;
+        }
+        h3,
+        p,
+        a {
+          position: relative;
+          z-index: 1;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            background-color: $color-claro;
+          }
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  aside.aside-productos {
+    font-size: 1rem;
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
+  /*PRODUCTOS */
