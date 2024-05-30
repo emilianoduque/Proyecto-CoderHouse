@@ -25,6 +25,10 @@ footer {
       i {
         font-size: 2rem;
         color: black;
+        transition: 0.5s ease;
+        &:hover {
+          transform: scale(1.2);   
+        }
       }
     }
   }
