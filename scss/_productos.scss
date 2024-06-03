@@ -66,13 +66,13 @@
         text-align: center;
         padding: 10px;
         margin: 15px;
-        transition: 1s ease;
+        transition: 0.2s ease;
         overflow: hidden;
         border-radius: 15px;
         background-color: white;
         img {
           max-width: 200px;
-          transition: 2s ease;
+          transition: 1s ease;
           &:hover {
             transform: rotate(30deg);
           }

@@ -10,6 +10,11 @@ header {
         flex-wrap: nowrap;
         flex-direction: column;
       }
+      button {
+        @include small-tablet {
+          margin-top: .6rem;
+        }
+      }
       img {
         transition: 1s ease;
         max-width: 70px;
@@ -33,6 +38,9 @@ header {
           a {
             text-decoration: none;
             color: black;
+            @include phone {
+              padding: .5rem;
+            }
           }
         }
       }

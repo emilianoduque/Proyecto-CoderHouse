@@ -1,11 +1,11 @@
 /* FOOTER */
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     background-color: $color-medio;
     align-items: center;
-    height: 70px;
-    padding: 0 2rem;
+    padding: .5rem 2rem;
     @include small-phone {
       display: flex;
       flex-direction: column;
@@ -13,19 +13,19 @@ footer {
       padding-top: 2rem;
     }
     img {
-      max-width: 60px;
+      max-width: 50px;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
       color: black;
     }
     a {
       color: black;
       i {
-        font-size: 2rem;
+        font-size: 1.7rem;
         color: black;
-        transition: 0.5s ease;
+        transition: 0.4s ease;
         &:hover {
           transform: scale(1.2);   
         }
