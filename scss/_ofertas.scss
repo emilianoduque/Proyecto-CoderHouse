@@ -1,62 +1,67 @@
 /* OFERTAS */
 .card-oferta {
-    box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.75);
-    border-radius: 10px;
-    max-width: 250px;
-    transition: 0.4s ease;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    background-color: white;
-    &:hover {
-      transform: scale(1.1);
-    }
-    img {
-      max-height: 350px;
-    }
-    h3 {
-      text-align: center;
-      margin: auto;
-    }
+  box-shadow: 7px 10px 19px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  max-width: 250px;
+  transition: 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+  &:hover {
+    transform: scale(1.1);
   }
-  
-  aside.categorias-ofertas {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 2rem;
+  img {
+    max-height: 350px;
   }
-  
-  #ofertas-article {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .titulo {
+  h3 {
     text-align: center;
+    margin: auto;
   }
-  
+}
+
+aside.categorias-ofertas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+  @include small-phone {
+    padding: 2rem 0.7rem;
+  }
   .card-body {
     height: 100%;
     width: 300px;
+    @include small-phone {
+      width: 100%;
+    }
   }
-  
-  .fondo {
-    background-color: $color-medio-claro;
-  }
-  
-  .btn {
-    background-color: #985d29;
-    border: none;
-  }
-  .btn:hover {
-    background-color: white;
-    color: $color-medio-claro;
-    border: 1px solid $color-medio-claro;
-  }
-  
-  /* OFERTAS */
+}
+
+#ofertas-article {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.fondo {
+  background-color: $color-medio-claro;
+}
+
+.btn {
+  background-color: #985d29;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: $color-medio-claro;
+  border: 1px solid $color-medio-claro;
+}
+/* OFERTAS */
