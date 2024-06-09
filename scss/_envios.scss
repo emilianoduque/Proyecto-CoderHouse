@@ -4,6 +4,10 @@
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: auto;
   margin: 2rem 0;
+  @include desktop {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+  }
   @include medium-desktop {
     display: flex;
     flex-direction: column;
@@ -39,6 +43,7 @@
     td,
     th {
       text-align: center;
+      font-size: .9rem;
     }
 
     td,
@@ -65,6 +70,13 @@
   aside#aside-envios-der {
     margin-top: 2rem;
     padding: 1rem;
+    @include desktop {
+      grid-column: 1/-1;
+      padding: 0 5rem;
+    }
+    @include tablet {
+      padding: 1rem;
+    }
   }
 }
 

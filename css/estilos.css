@@ -383,6 +383,12 @@ aside.categorias-ofertas .card-body {
   grid-template-rows: auto;
   margin: 2rem 0;
 }
+@media screen and (max-width: 1629px) {
+  .grid-envios {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+  }
+}
 @media screen and (max-width: 1171px) {
   .grid-envios {
     display: flex;
@@ -425,6 +431,7 @@ aside.categorias-ofertas .card-body {
 .grid-envios #article-opciones-envio td,
 .grid-envios #article-opciones-envio th {
   text-align: center;
+  font-size: 0.9rem;
 }
 .grid-envios #article-opciones-envio td,
 .grid-envios #article-opciones-envio th {
@@ -451,6 +458,17 @@ aside.categorias-ofertas .card-body {
 .grid-envios aside#aside-envios-der {
   margin-top: 2rem;
   padding: 1rem;
+}
+@media screen and (max-width: 1629px) {
+  .grid-envios aside#aside-envios-der {
+    grid-column: 1/-1;
+    padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 995px) {
+  .grid-envios aside#aside-envios-der {
+    padding: 1rem;
+  }
 }
 
 /* ENVIOS */

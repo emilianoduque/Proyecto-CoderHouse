@@ -7,9 +7,9 @@ Autor: Emiliano Duque
 
 ## Herramientas: 
 -Bootstrap
-    -Sass(creacion de variables y uso de mixins) 
-    -Html
-    -Css(haciendo uso de flexbox y grid para diseño responsive)
-    -AOS Animation
-    -Optimización de imagenes
-    -Técnicas Seo
+-Sass(creacion de variables y uso de mixins) 
+-Html
+-Css(haciendo uso de flexbox y grid para diseño responsive)
+-AOS Animation
+-Optimización de imagenes
+-Técnicas Seo
