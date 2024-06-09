@@ -32,10 +32,11 @@ aside.categorias-ofertas {
     padding: 2rem 0.7rem;
   }
   .card-body {
-    height: 100%;
+    height: 200px;
     width: 300px;
     @include small-phone {
       width: 100%;
+      height: 100%;
     }
   }
 }
@@ -57,11 +58,13 @@ aside.categorias-ofertas {
 .btn {
   background-color: #985d29;
   border: none;
+  color: #ffff;
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: $color-medio;
+    border: 1px solid $color-medio-claro;
+  }
 }
 
-.btn:hover {
-  background-color: rgb(255, 255, 255);
-  color: $color-medio-claro;
-  border: 1px solid $color-medio-claro;
-}
+
 /* OFERTAS */
